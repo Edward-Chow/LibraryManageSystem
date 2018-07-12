@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="domain.BorrowInfo" table="borrowInfo" dynamic-update="true" dynamic-insert="true">
+        <id name="borrowId" column="borrowId" type="java.lang.Integer">
+            <generator class="increment"></generator>
+        </id>
+
+        <property name="borrowDate" column="borrowDate" type="java.util.Date"></property>
+
+        <property name="returnDate" column="returnDate" type="java.util.Date"></property>
+
+        <property name="penalty" column="penalty" type="java.lang.Double"></property>
+
+        <property name="overday" type="java.lang.Integer">
+            <column name="overday" default="0"></column>
+        </property>
+
+        <property name="state" type="java.lang.Integer">
+            <column name="state" default="0"></column>
+        </property>
+
+        <many-to-one name="book" class="domain.Book" column="bookId" lazy="false"></many-to-one>
+
+        <many-to-one name="reader" class="domain.Reader" column="readerId" lazy="false"></many-to-one>
+
+        <many-to-one name="admin" class="domain.Admin" column="aid" lazy="false"></many-to-one>
+
+    </class>
+</hibernate-mapping>

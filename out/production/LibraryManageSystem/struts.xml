@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+        <!DOCTYPE struts PUBLIC
+                "-//Apache Software Foundation//DTD Struts Configuration 2.1.7//EN"
+                "http://struts.apache.org/dtds/struts-2.1.7.dtd">
+
+<struts>
+        <!-- 配置文件改了以后不用重新启动 -->
+        <constant name="struts.devMode" value="false"/><!-- 设置为false不显示详细错误 -->
+
+        <!-- 把struts的请求委托给spring管理,
+                作用:创建Action实例的过程由spring处理,其他的还是有struts2自己处理 -->
+        <constant name="struts.objectFactory" value="spring" />
+        <!--
+        配置所有资源文件，省略后缀名，如果配置多个资源文件时，用","隔开。不仅是国际化资源文件
+        * 类型转换器的错误提示资源文件
+        * 国际化资源文件
+        * 上传文件的错误提示信息资源文件
+        -->
+        <constant name="struts.custom.i18n.resources"
+                value="com.cc.library.action.fileuploadmessage">
+        </constant>
+
+        <include file="conf/struts2/reader-login.xml"></include>
+        <include file="conf/struts2/reader-info.xml"></include>
+        <include file="conf/struts2/book.xml"></include>
+        <include file="conf/struts2/borrow.xml"></include>
+        <include file="conf/struts2/forfeiit.xml"></include>
+        <include file="conf/struts2/admin-login.xml"></include>
+        <include file="conf/struts2/admin-info.xml"></include>
+        <include file="conf/struts2/book-manage.xml"></include>
+        <include file="conf/struts2/bookType-manage.xml"></include>
+        <include file="conf/struts2/borrow-manage.xml"></include>
+        <include file="conf/struts2/back-manage.xml"></include>
+        <include file="conf/struts2/borrow-search.xml"></include>
+        <include file="conf/struts2/forfeit-manage.xml"></include>
+        <include file="conf/struts2/authorization.xml"></include>
+        <include file="conf/struts2/admin-manage.xml"></include>
+        <include file="conf/struts2/reader-manage.xml"></include>
+        <include file="conf/struts2/readerType-manage.xml"></include>
+</struts>

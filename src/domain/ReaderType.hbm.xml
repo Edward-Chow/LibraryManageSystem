@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="domain.ReaderType" table="readerType" dynamic-update="true" dynamic-insert="true">
+        <id name="readerTypeId" column="readerTypeId" type="java.lang.Integer">
+            <generator class="increment"></generator>
+        </id>
+
+        <property name="readerTypeName" column="readerTypeName" type="java.lang.String"></property>
+
+        <property name="maxNum" column="maxNum" type="java.lang.Integer"></property>
+
+        <property name="penalty" column="penalty" type="java.lang.Double"></property>
+
+        <property name="backDay" column="backDay" type="java.lang.Integer"></property>
+
+        <property name="renewDay" column="renewDay" type="java.lang.Integer"></property>
+    </class>
+</hibernate-mapping>

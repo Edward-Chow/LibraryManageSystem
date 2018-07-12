@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="web" name="Web">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/web/WEB-INF/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/web" relative="/" />
+        </webroots>
+      </configuration>
+      <facet type="Struts2" name="Struts 2">
+        <configuration>
+          <fileset id="s2fileset" name="Default File Set " removed="false">
+            <file>file://$MODULE_DIR$/src/struts.xml</file>
+            <file>jar://$USER_HOME$/Downloads/LibrarySystem-master/LibrarySystem/WebRoot/WEB-INF/lib/struts2/struts2-core-2.1.8.1.jar!/struts-default.xml</file>
+            <file>jar://$USER_HOME$/Downloads/LibrarySystem-master/LibrarySystem/WebRoot/WEB-INF/lib/struts2/struts2-spring-plugin-2.1.8.1.jar!/struts-plugin.xml</file>
+            <file>file://$MODULE_DIR$/src/conf/struts2/reader-login.xml</file>
+            <file>file://$MODULE_DIR$/src/conf/struts2/reader-info.xml</file>
+            <file>file://$MODULE_DIR$/src/conf/struts2/book.xml</file>
+            <file>file://$MODULE_DIR$/src/conf/struts2/borrow.xml</file>
+            <file>file://$MODULE_DIR$/src/conf/struts2/forfeiit.xml</file>
+            <file>file://$MODULE_DIR$/src/conf/struts2/admin-login.xml</file>
+            <file>file://$MODULE_DIR$/src/conf/struts2/admin-info.xml</file>
+            <file>file://$MODULE_DIR$/src/conf/struts2/book-manage.xml</file>
+            <file>file://$MODULE_DIR$/src/conf/struts2/bookType-manage.xml</file>
+            <file>file://$MODULE_DIR$/src/conf/struts2/borrow-manage.xml</file>
+            <file>file://$MODULE_DIR$/src/conf/struts2/back-manage.xml</file>
+            <file>file://$MODULE_DIR$/src/conf/struts2/borrow-search.xml</file>
+            <file>file://$MODULE_DIR$/src/conf/struts2/forfeit-manage.xml</file>
+            <file>file://$MODULE_DIR$/src/conf/struts2/authorization.xml</file>
+            <file>file://$MODULE_DIR$/src/conf/struts2/reader-manage.xml</file>
+            <file>file://$MODULE_DIR$/src/conf/struts2/admin-manage.xml</file>
+            <file>file://$MODULE_DIR$/src/conf/struts2/readerType-manage.xml</file>
+          </fileset>
+          <propertiesKeys disabled="false" />
+        </configuration>
+      </facet>
+    </facet>
+    <facet type="Spring" name="Spring">
+      <configuration>
+        <fileset id="fileset" name="Spring Application Context" removed="false">
+          <file>file://$MODULE_DIR$/conf/spring/applicationContext.xml</file>
+          <file>file://$MODULE_DIR$/src/conf/spring/applicationContext-db.xml</file>
+        </fileset>
+        <fileset id="fileset2" name="Spring Application Context (2)" removed="false">
+          <file>file://$MODULE_DIR$/src/conf/spring/applicationContext-db.xml</file>
+          <file>file://$MODULE_DIR$/src/conf/spring/applicationContext.xml</file>
+          <file>file://$MODULE_DIR$/src/conf/spring/reader-login.xml</file>
+          <file>file://$MODULE_DIR$/src/conf/spring/forfeit-manage.xml</file>
+          <file>file://$MODULE_DIR$/src/conf/spring/borrow-manage.xml</file>
+          <file>file://$MODULE_DIR$/src/conf/spring/readerType-manage.xml</file>
+          <file>file://$MODULE_DIR$/src/conf/spring/reader-info.xml</file>
+          <file>file://$MODULE_DIR$/src/conf/spring/bookType-manage.xml</file>
+          <file>file://$MODULE_DIR$/src/conf/spring/book.xml</file>
+          <file>file://$MODULE_DIR$/src/conf/spring/book-manage.xml</file>
+          <file>file://$MODULE_DIR$/src/conf/spring/back-manage.xml</file>
+          <file>file://$MODULE_DIR$/src/conf/spring/borrow.xml</file>
+          <file>file://$MODULE_DIR$/src/conf/spring/forfeit.xml</file>
+          <file>file://$MODULE_DIR$/src/conf/spring/admin-login.xml</file>
+          <file>file://$MODULE_DIR$/src/conf/spring/admin-info.xml</file>
+          <file>file://$MODULE_DIR$/src/conf/spring/borrow-search.xml</file>
+          <file>file://$MODULE_DIR$/src/conf/spring/authorization.xml</file>
+          <file>file://$MODULE_DIR$/src/conf/spring/reader-manage.xml</file>
+          <file>file://$MODULE_DIR$/src/conf/spring/admin-manage.xml</file>
+          <file>file://$MODULE_DIR$/src/conf/spring/quartz.xml</file>
+        </fileset>
+      </configuration>
+    </facet>
+    <facet type="hibernate" name="Hibernate">
+      <configuration>
+        <datasource-map>
+          <unit-entry name="conf:hibernate:hibernate.cfg.xml" value="32de9f69-0a4e-42bd-a822-0bc26f322e68" />
+          <unit-entry name="sessionFactory" />
+        </datasource-map>
+        <naming-strategy-map />
+        <deploymentDescriptor name="hibernate.cfg.xml" url="file://$MODULE_DIR$/src/conf/hibernate/hibernate.cfg.xml" />
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" scope="PROVIDED" name="Tomcat 9.0.5" level="application_server_libraries" />
+    <orderEntry type="library" exported="" name="Spring" level="project" />
+    <orderEntry type="library" exported="" name="Struts 2" level="project" />
+    <orderEntry type="library" exported="" name="Hibernate" level="project" />
+    <orderEntry type="library" exported="" name="mysql-connector-java-5.1.10-bin" level="project" />
+    <orderEntry type="library" exported="" name="json-lib-2.4-jdk15" level="project" />
+    <orderEntry type="library" exported="" name="junit" level="project" />
+    <orderEntry type="library" exported="" name="jxl" level="project" />
+    <orderEntry type="library" exported="" name="quartz-1.7.3" level="project" />
+    <orderEntry type="library" exported="" name="jstl" level="project" />
+    <orderEntry type="library" exported="" name="standard" level="project" />
+  </component>
+</module>

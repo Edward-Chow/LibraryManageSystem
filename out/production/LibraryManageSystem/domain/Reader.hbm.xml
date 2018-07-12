@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="domain.Reader" table="reader" dynamic-update="true" dynamic-insert="true">
+        <id name="readerId" column="readerId" type="java.lang.Integer">
+            <generator class="increment"></generator>
+        </id>
+
+        <property name="name" column="name" type="java.lang.String"></property>
+
+        <property name="cardId" column="cardId" type="java.lang.String"></property>
+
+        <property name="password" column="password" type="java.lang.String"></property>
+
+        <property name="phone" column="phone" type="java.lang.String"></property>
+
+        <property name="email" column="email" type="java.lang.String"></property>
+
+        <property name="createTime" column="createTime" type="java.util.Date"></property>
+
+        <!-- failed to lazily initialize a collection of role: com.cc.library.domain.Reader.borrowInfos,  no session or session was closed -->
+        <!-- 解决方案改动 lazy="false" -->
+        <set name="borrowInfos"  lazy="false" inverse="true">
+            <key>
+                <column name="readerId" ></column>
+            </key>
+            <one-to-many class="domain.BorrowInfo"/>
+        </set>
+
+
+
+        <many-to-one name="readerType" class="domain.ReaderType" lazy="false">
+            <column name="readerTypeId"></column>
+        </many-to-one>
+
+
+        <many-to-one name="admin" class="domain.Admin" lazy="false" >
+            <column name="aid"></column>
+        </many-to-one>
+
+    </class>
+</hibernate-mapping>

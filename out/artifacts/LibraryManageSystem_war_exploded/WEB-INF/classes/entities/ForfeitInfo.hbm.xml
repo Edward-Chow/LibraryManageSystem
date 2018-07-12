@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="entities.ForfeitInfo" table="forfeitInfo" dynamic-update="true" dynamic-insert="true">
+        <id name="borrowId" type="java.lang.Integer" column="borrowId">
+            <generator class="foreign">
+                <param name="property">borrowInfo</param>
+            </generator>
+        </id>
+
+        <property name="forfeit" column="forfeit" type="java.lang.Double"></property>
+
+        <property name="isPay" type="int">
+            <column name="isPay" default="0"></column>
+        </property>
+
+        <one-to-one name="borrowInfo" constrained="true" lazy="false"></one-to-one>
+
+        <many-to-one name="admin" class="entities.Admin" column="aid" lazy="false"></many-to-one>
+    </class>
+</hibernate-mapping>

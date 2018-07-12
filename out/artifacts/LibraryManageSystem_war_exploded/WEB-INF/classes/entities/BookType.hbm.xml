@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="entities.BookType" table="BookType" dynamic-insert="true" dynamic-update="true">
+        <id name="typeId" column="typeId" type="java.lang.Integer" >
+            <generator class="increment"></generator>
+        </id>
+
+        <property name="typeName" column="typeName" type="java.lang.String"></property>
+    </class>
+</hibernate-mapping>

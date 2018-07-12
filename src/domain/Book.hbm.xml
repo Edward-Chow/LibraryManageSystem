@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="domain.Book" table="book" dynamic-update="true" dynamic-insert="true">
+        <id name="bookId" column="bookId" type="java.lang.Integer" length="7">
+            <generator class="increment"></generator>
+        </id>
+        
+        <property name="ISBN" type="java.lang.String" column="ISBN"></property>
+        
+        <property name="bookName" column="bookName" type="java.lang.String"></property>
+        
+        <property name="auth" column="auth" type="java.lang.String"></property>
+        
+        <property name="press" column="press" type="java.lang.String"></property>
+        
+        <property name="totalNum" column="totalNum" type="java.lang.Integer"></property>
+        
+        <property name="onDate" column="onDate" type="java.util.Date"></property>
+        
+        <property name="numInLibrary" column="numInLibrary" type="java.lang.Integer"></property>
+        
+        <property name="price" column="price" type="java.lang.Double"></property>
+        
+        <property name="description" column="description" type="java.lang.String"></property>
+        
+        <many-to-one name="bookType" class="domain.BookType" lazy="false" column="typeId"></many-to-one>
+
+        <many-to-one name="admin" class="domain.Admin" column="aid" lazy="false"></many-to-one>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,17 @@
+<component name="libraryTable">
+  <library name="Spring" type="spring">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/Downloads/LibrarySystem-master/LibrarySystem/WebRoot/WEB-INF/lib/spring2.5.5/aspectjrt.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/LibrarySystem-master/LibrarySystem/WebRoot/WEB-INF/lib/spring2.5.5/aspectjweaver.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/LibrarySystem-master/LibrarySystem/WebRoot/WEB-INF/lib/spring2.5.5/c3p0-0.9.1.2.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/LibrarySystem-master/LibrarySystem/WebRoot/WEB-INF/lib/spring2.5.5/cglib-nodep-2.1_3.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/LibrarySystem-master/LibrarySystem/WebRoot/WEB-INF/lib/spring2.5.5/common-annotations.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/LibrarySystem-master/LibrarySystem/WebRoot/WEB-INF/lib/spring2.5.5/commons-lang.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/LibrarySystem-master/LibrarySystem/WebRoot/WEB-INF/lib/spring2.5.5/commons-logging.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/LibrarySystem-master/LibrarySystem/WebRoot/WEB-INF/lib/spring2.5.5/log4j-1.2.15.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/LibrarySystem-master/LibrarySystem/WebRoot/WEB-INF/lib/spring2.5.5/spring.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

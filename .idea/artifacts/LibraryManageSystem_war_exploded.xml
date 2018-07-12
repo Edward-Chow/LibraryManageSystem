@@ -1,0 +1,25 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="LibraryManageSystem:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/LibraryManageSystem_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="LibraryManageSystem/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="LibraryManageSystem" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Hibernate" />
+          <element id="library" level="project" name="json-lib-2.4-jdk15" />
+          <element id="library" level="project" name="junit" />
+          <element id="library" level="project" name="jxl" />
+          <element id="library" level="project" name="mysql-connector-java-5.1.10-bin" />
+          <element id="library" level="project" name="quartz-1.7.3" />
+          <element id="library" level="project" name="Spring" />
+          <element id="library" level="project" name="Struts 2" />
+          <element id="library" level="project" name="jstl" />
+          <element id="library" level="project" name="standard" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

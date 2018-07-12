@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:aop="http://www.springframework.org/schema/aop" xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:tx="http://www.springframework.org/schema/tx" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+           http://www.springframework.org/schema/aop
+           http://www.springframework.org/schema/aop/spring-aop-2.5.xsd
+           http://www.springframework.org/schema/context
+           	http://www.springframework.org/schema/context/spring-context-2.5.xsd
+           	http://www.springframework.org/schema/tx
+           	http://www.springframework.org/schema/tx/spring-tx-2.5.xsd">
+
+        <bean id="borrowDao" class="dao.impl.BorrowDaoImpl">
+            <property name="sessionFactory">
+                <ref bean="sessionFactory"></ref>
+            </property>
+        </bean>
+
+        <bean id="borrowService" class="service.impl.BorrowServiceImpl">
+            <property name="forfeitDao">
+                <ref bean="forfeitDao"></ref>
+            </property>
+            <property name="borrowDao">
+                <ref bean="borrowDao"></ref>
+            </property>
+            <property name="bookDao">
+                <ref bean="bookDao"></ref>
+            </property>
+            <property name="backDao">
+                <ref bean="backDao"></ref>
+            </property>
+            <property name="readerDao">
+                <ref bean="readerDao"></ref>
+            </property>
+        </bean>
+
+        <bean id="borrowManageAction" class="action.BorrowManageAction" scope="prototype">
+            <property name="borrowService">
+                <ref bean="borrowService"></ref>
+            </property>
+        </bean>
+</beans>
